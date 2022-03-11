@@ -15,12 +15,14 @@ $std=$_POST['std'];
 
 
 if ($password!=$cpassword){
+
     echo '<script>
 alert("passwords do not match");
 window.location="../partial-files/registration.php"
 </script>';
 }
 else{
+    $password=md5($password);
     move_uploaded_file($tmp_name,"../uploads/$image");
 
     $sql="INSERT INTO `voterdata`( `username`, `admission_number`, `password`, `photo`, `standard`, `status`, 

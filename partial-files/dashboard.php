@@ -28,6 +28,7 @@ if ($_SESSION['status']==1){
           crossorigin="anonymous">
 </head>
 <body>
+
 <nav class="navbar navbar-expand-sm bg-success navbar-dark  border px-5  shadow">
     <div class="container-fluid">
             <a class="navbar-brand text-white" href="#">MASOMO SCHOOL EBALLOT</a>
@@ -48,10 +49,13 @@ if ($_SESSION['status']==1){
 
     </div>
 </nav>
+
+<h1 class="text-center text-success ">MASOMO SCHOOL EBALLOT  </h1>
+
+<h4 class="text-center text-success "><i >Your Vote, Your Voice  </i></h4>
+<hr>
 <a href="../"><button class="btn btn-success text-white mt-3 mx-5 px-3">BACK</button></a>
 <a href="logout.php"><button class="btn btn-success text-white mt-3 mx-5 px-3 float-end">LOGOUT</button></a>
-<h1 class="text-center text-success ">MASOMO SCHOOL EBALLOT  </h1>
-<h4 class="text-center text-success "><i >Your Vote, Your Voice  </i></h4>
 <div class="row my-5">
     <div class="col-md-7">
         <?php
@@ -79,12 +83,15 @@ if ($_SESSION['status']==1){
                 <?php
                 if ($_SESSION['status']==1){
                     ?>
-                        <button class="btn btn-success m-auto px-5"  type="submit">Voted</button>
+                    <hr>
+                        <button class="btn btn-success mt-3 mx-5 px-3"  type="submit">Voted</button>
                     <?php
 
                 }else{
                     ?>
-                    <button class="btn btn-success  m-auto px-5" value="submit">Vote</button>
+                    <br>
+                    <hr>
+                    <button class="btn btn-success  mt-3 mx-5 px-3" value="submit">Vote</button>
                       <?php
 
                 }
@@ -120,7 +127,10 @@ if ($_SESSION['status']==1){
         <?php  echo $status ;?><br><br>
     </div>
 
+
 </div>
 
+<a href="../actions/resetPass.php"><button type="submit" class="btn btn-success  mt-3 mx-5 px-3"> Reset Password</button></a>
+<hr>
 </body>
 </html>

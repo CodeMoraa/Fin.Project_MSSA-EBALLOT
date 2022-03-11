@@ -16,9 +16,8 @@
     <div class="row">
         <div class="col-md-6 off-md-3">
             <div class="Login-form" >
-                <form action="./actions/handle_login.php" method="POST" class="mt-5  border p-5 bg-light shadow" >
+                <form action="./handle_login.php" method="POST" class="mt-5  border p-5 bg-light shadow" enctype="multipart/form-data">
                     <h2 class="text-success text-center">MASOMO SCHOOL EBALLOT</h2>
-                    <hr>
                     <h2 class="text-center">LOGIN</h2>
                     <br>
                     <div class="row">
@@ -27,7 +26,7 @@
                                    placeholder="Enter Username" required="required" >
                         </div>
                     </div>
-                    <div class="row">
+                    <f class="row">
                         <div class="mb-3 col-md-12">
                             <input type="text"  class="form-control  m-auto" name="admission number"
                                    placeholder="Enter Admission Number" required="required" >
@@ -55,7 +54,7 @@
                         <br>
                         <hr>
                         <div class="col-md-12">
-                            <p>Forgot your password?<a href="actions/resetPass.php" class="text-danger">Reset</a></p>
+                            <p>Forgot your password?<a href="resetPass.php" class="text-danger">Reset</a></p>
                         </div>
                 </form>
             </div>

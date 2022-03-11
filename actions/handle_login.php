@@ -8,7 +8,7 @@ $username = $_POST['username'];
 
 $admission_number = $_POST['admission_number'];
 
-$password = $_POST['password'];
+$password = md5( $_POST['password']);
 
 $std= $_POST['std'];
 
@@ -36,6 +36,7 @@ if (mysqli_num_rows($result)>0){
       $_SESSION['id']=$data['id'];
       $_SESSION['status']=$data['status'];
       $_SESSION['data']=$data;
+
        echo '<script>
                 window.location="../partial-files/dashboard.php";
              </script>';
@@ -47,7 +48,5 @@ alert("invalid credentials");
 window.location="../";
 </script>';
 
+    }
 
-
-}
-?>

@@ -15,6 +15,8 @@ $updatevotes = mysqli_query($con, "UPDATE `voterdata` SET `total_votes`='$totalv
 
 $updatevotes = mysqli_query($con,"UPDATE `voterdata` SET `status`=1 WHERE id='$userid'");
 
+$updatestatus = mysqli_query($con,"UPDATE `voterdata` SET `status`=1 WHERE id='$userid'");
+
 
 if ($updatevotes and $updatestatus){
 

@@ -18,6 +18,7 @@
                 <form action="../actions/handle_register.php" method="POST" enctype="multipart/form-data"
                       class="mt-5  border p-5 bg-light shadow" >
                     <h1 class="text-center">Create Your Account</h1>
+                    <hr>
                     <h3 class="text-success text-center"><i>Your Vote, Your Future</i></h3>
                     <br>
                     <div class="row">
