@@ -12,7 +12,6 @@ if ($_SESSION['status']==1){
     $status='<b class="text-danger">Not Voted</b>';
 }
 
-
 ?>
 
 <!DOCTYPE html>

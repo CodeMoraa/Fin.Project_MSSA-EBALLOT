@@ -49,6 +49,8 @@
                             <p>Don't have an account? <a href="./partial-files/registration.php" class="text-danger">
                                     Register Here!</a></p>
                         </div>
+                        <br>
+                        <br>
                         <hr>
                         <div class="col-md-12">
                             <p>Forgot your password?<a href="./actions/password_reset.php"  class="text-danger">Reset</a></p>
