@@ -1,6 +1,6 @@
 <?php
 include ('connect.php');
-
+include ('handle_login.php');
 if (isset($_POST['reset'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
@@ -8,18 +8,18 @@ if (isset($_POST['reset'])) {
 
     //validating password
     if (strlen($password) < 6) {
-        $passError = "<div class='alert alert-danger'>Password cannot be less than 6 characters</div>";
-        echo $passError;
+        $passerror = "<div class='alert alert-danger'>Password cannot be less than 6 characters</div>";
+        echo $passerror;
     }
     else {
-        $storePass = password_hash($password, PASSWORD_DEFAULT);
+        $storepass = password_hash($password, PASSWORD_DEFAULT);
     }
     if ($cpassword != $password) {
-        $confirmPassError = "<div class='alert alert-danger'>Passwords do not match</div>";
-        echo $confirmPassError;
+        $confirmpasserror = "<div class='alert alert-danger'>Passwords do not match</div>";
+        echo $confirmpasserror;
     }
-    if (empty($passError) and empty($confirmPassError)) {
-        $sql = " UPDATE `voterdata` SET `password`='$storePass' WHERE username= '$username' ";
+    if (empty($passerror) and empty($confirmpasserror)) {
+        $sql = " UPDATE `voterdata` SET `password`='$storepass' WHERE password = '$password' ";
 
         $con = mysqli_connect('localhost','root','','mssas eballot');
 
@@ -33,7 +33,6 @@ if (isset($_POST['reset'])) {
         }
     }
 }
-
 
 ?>
 

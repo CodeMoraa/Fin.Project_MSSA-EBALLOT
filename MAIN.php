@@ -146,8 +146,7 @@
 
 <footer>
     <div class="footer border px-5  shadow">
-        <h2>MASOMO SCHOOL</h2>
-        <p>Nairobi, Kenya</p>
+        <p>MASOMO SCHOOL</p>
         <p>Opening Minds, Building Futures.</p>
         <p class="footer-bottom-text">CopyRights © All rights reserved 2022</p>
 

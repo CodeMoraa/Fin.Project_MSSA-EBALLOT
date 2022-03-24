@@ -32,7 +32,7 @@ if ($_SESSION['status']==1){
 <nav class="navbar navbar-expand-sm bg-success navbar-dark  border px-5  shadow">
     <div class="container-fluid">
             <a class="navbar-brand text-white" href="#">MASOMO SCHOOL EBALLOT</a>
-        <img src="../img/LOGO.jpg" alt="Avatar Logo" width="100" height="100" class="rounded-pill">
+        <img src="../LOGO.jpg" alt="Avatar Logo" width="100" height="100" class="rounded-pill">
         <ul class="navbar-nav px-5 navbar-dark">
             <li class="nav-item">
                 <a class="nav-link text-white" href="#">HOME</a>

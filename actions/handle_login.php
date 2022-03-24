@@ -36,7 +36,6 @@ if (mysqli_num_rows($result)>0){
       $_SESSION['id']=$data['id'];
       $_SESSION['status']=$data['status'];
       $_SESSION['data']=$data;
-
        echo '<script>
                 window.location="../partial-files/dashboard.php";
              </script>';
